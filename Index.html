@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli AI Image Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Ghibli AI Image Maker</h1>
+        <p class="subtitle">Create stunning AI-generated Ghibli-style images.</p>
+        
+        <select id="category">
+            <option value="landscape">Landscape</option>
+            <option value="character">Character</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+
+        <input type="file" id="imageUpload" class="input">
+        <button class="button" onclick="generateImage()">Generate Image</button>
+
+        <div id="output">
+            <img id="generatedImage" class="generated-image fade-in" style="display:none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
